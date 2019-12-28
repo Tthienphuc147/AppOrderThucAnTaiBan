@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.anhki.foodapp.DangKyActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_above="@+id/frmDangKy">
+            <TextView
+
+                android:id="@+id/txtTieuDeDangKy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="ĐĂNG KÝ"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="BROTHERHOOD LÀ MỘT GIA ĐÌNH"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/frmDangKy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="50dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/edTenDangNhapDK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_top"
+                android:hint="Tên đăng nhập"
+                android:inputType="textPersonName"
+                android:padding="15dp" />
+
+            <EditText
+                android:id="@+id/edMatKhauDK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_middle"
+                android:hint="Nhập mật khẩu"
+                android:inputType="textPassword"
+                android:padding="15dp"/>
+            <EditText
+                android:id="@+id/edNgaySinhDK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_top"
+                android:hint="Ngày sinh"
+                android:inputType="date"
+                android:padding="15dp" />
+            <EditText
+                android:id="@+id/edCMNDDK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_middle"
+                android:hint="CMND"
+                android:inputType="date"
+                android:padding="15dp"
+                android:numeric="integer"
+                android:maxLength="9"/>
+
+
+
+            <Spinner
+                android:id="@+id/spinQuyen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_bottom"
+                android:padding="15dp"
+                ></Spinner>
+
+
+            <RadioGroup
+                android:id="@+id/rgGioiTinhDK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <RadioButton
+                    android:id="@+id/rdNam"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button"
+                    android:button="@null"
+                    android:checked="true"
+                    android:focusedByDefault="true"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Nam"
+                    android:textColor="#1D976C" />
+
+                <RadioButton
+                    android:id="@+id/rdNu"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/button"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Nữ"
+                    android:textColor="#1D976C" />
+
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btnDongYDK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="ĐĂNG KÝ"
+                android:textAllCaps="false"
+                android:textColor="#1D976C"
+                android:textSize="17sp"/>
+
+            <Button
+                android:id="@+id/btnThoatDK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="THOÁT"
+                android:textAllCaps="false"
+                android:textColor="#1D976C"
+                android:textSize="17sp"/>
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
