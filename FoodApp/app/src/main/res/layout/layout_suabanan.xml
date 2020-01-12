@@ -22,6 +22,7 @@
         android:layout_height="wrap_content"
         android:text="@string/dongy"
         android:layout_gravity="center"
-        android:background="@drawable/button"
+        android:background="@drawable/bg"
+        android:textColor="@color/colorWhite"
         />
 </LinearLayout>
